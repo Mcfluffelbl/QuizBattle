@@ -1,0 +1,9 @@
+#TODO - Quizbattle - 2026-01-08
+
+- [ ] Skapa domänklassen Question med regler för validering.
+- [ ] Skapa klassen Choice för svarsalternativ.
+- [ ] Visa frågor, ta emot svar, räkna poäng.
+- [ ] Lägg till hjälpfunktioner för visning och input.
+- [ ] Skriv enhetstester för domänregler (minst två).
+- [ ] Kör och verifiera att konsolappen fungerar med tre frågor.
+- [ ] Bygg en minimal konsol-loop:
