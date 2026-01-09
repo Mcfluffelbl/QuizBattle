@@ -1,11 +1,12 @@
-﻿
+﻿using System;
+
 namespace QuizBattle_Codealong
 {
     public class Question
     {
         public Question(string text, Choice[] choices, string correctAnswerCode)
         {
-            text = text.Trim();
+            Text = text.Trim();
             Choices = choices.ToList();
             CorrectAnswerCode = correctAnswerCode;
             EnsureValid();
