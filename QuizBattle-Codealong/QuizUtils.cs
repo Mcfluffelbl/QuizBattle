@@ -4,7 +4,7 @@
     {
         private static List<Question> _questions = new();
         private int _count = 0; // Antal Korrekta svar
-        private int _TotalCount = 0; // 
+        private static int _TotalCount = 0; // 
         public static bool IsCompleted()
         {
             throw new NotImplementedException();
@@ -17,7 +17,15 @@
 
         internal static void DisplayQuestion()
         {
-            throw new NotImplementedException();
+            Question question = _questions[_TotalCount];
+
+            Console.WriteLine();
+            Console.WriteLine(question.Text);
+
+            foreach (var choice in question.Choices)
+            {
+                Console.WriteLine($"{choice.Code}. {choice.Option}");
+            }
         }
 
         internal static int GetAnswer()
